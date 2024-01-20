@@ -74,6 +74,14 @@
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+
+  /** newcolor **/
+  --ion-color-newcolor: #e260b2;
+	--ion-color-newcolor-rgb: 226,96,178;
+	--ion-color-newcolor-contrast: #000000;
+	--ion-color-newcolor-contrast-rgb: 0,0,0;
+	--ion-color-newcolor-shade: #c7549d;
+	--ion-color-newcolor-tint: #e570ba;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -236,7 +244,7 @@
 }
 
 html {
-  /* 
+  /*
    * For more information on dynamic font scaling, visit the documentation:
    * https://ionicframework.com/docs/layout/dynamic-font-scaling
    */

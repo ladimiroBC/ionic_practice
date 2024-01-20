@@ -1,0 +1,29 @@
+{
+  "customers_online":[
+    {
+      "name":"Poe",
+      "state":"New Ride",
+      "description":"I just upgraded my X-Wing. Next time...",
+      "image":"avatar-poe.png"
+    },
+    {
+      "name":"Ben",
+      "state":"Move Along",
+      "description":"These aren't the droids you're looking for...",
+      "image":"avatar-ben.png"
+    },
+    {
+      "name":"Leia",
+      "state":"You're My Only Hope",
+      "description":"I've placed information vital to the survival...",
+      "image":"avatar-leia.png"
+    },
+    {
+      "name":"Yoda",
+      "state":"Size matters not",
+      "description":"Do or do not. There is no try...",
+      "image":"avatar-yoda.png"
+    }
+  ]
+}
+

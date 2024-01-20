@@ -1,0 +1,55 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="newcolor">
+    <ion-title>customers</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+  <ion-list>
+    <ion-list-header> Recent Conversations </ion-list-header>
+
+    <ion-item *ngFor="let customer of customersRecent">
+      <ion-avatar slot="start">
+        <img src="../../assets/images/customers/{{customer.image}}"/>
+      </ion-avatar>
+      <ion-label>
+        <h2>{{customer.name}}</h2>
+        <h3>{{customer.state}}</h3>
+        <p>{{customer.description}}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-list-header> Online </ion-list-header>
+
+    <ion-item *ngFor="let customer of customersOnline">
+      <ion-avatar slot="start">
+        <img src="../../assets/images/customers/{{customer.image}}" />
+      </ion-avatar>
+      <ion-label>
+        <h2>{{customer.name}}</h2>
+        <h3>{{customer.state}}</h3>
+        <p>{{customer.description}}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
+
+<!--
+  <ion-content>
+  <div class="container-button">
+    <button ion-button (click)="navigate()" class="btn">Go to home</button>
+  </div>
+</ion-content>
+-->
+
+<!--
+  <ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar color="newcolor">
+      <ion-title size="large">customers</ion-title>
+    </ion-toolbar>
+  </ion-header>
+</ion-content>
+-->

@@ -1,0 +1,28 @@
+{
+  "customers_recent":[
+    {
+      "name":"Finn",
+      "state":"I'm a big deal",
+      "description":"Listen, I've had a pretty messed up day...",
+      "image":"avatar-finn.png"
+    },
+    {
+      "name":"Han",
+      "state":"Look, kid...",
+      "description":"I've got enough on my plate as it is, and I...",
+      "image":"avatar-han.png"
+    },
+    {
+      "name":"Rey",
+      "state":"I can handle myself",
+      "description":"You will remove these restraints and leave...",
+      "image":"avatar-rey.png"
+    },
+    {
+      "name":"Luke",
+      "state":"Your thoughts betray you",
+      "description":"I feel the good in you, the conflict...",
+      "image":"avatar-luke.png"
+    }
+  ]
+}
