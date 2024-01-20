@@ -29,8 +29,7 @@ export class CustomersPage implements OnInit {
   getCustomerRecent() {
     this._customerService.getCustomersRecent().subscribe({
       next: (response) => {
-        this.customersRecent = response.customer_recent;
-        console.log(this.customersRecent)
+        this.customersRecent = response.customers_recent;
       },
       error: (error) => {
         console.log(error);
@@ -39,6 +38,13 @@ export class CustomersPage implements OnInit {
   }
 
   getCustomerOnline() {
-
+    this._customerService.getCustomersOnline().subscribe({
+      next: (response) => {
+        this.customersOnline = response.customers_online;
+      },
+      error: (error) => {
+        console.log(error);
+      }
+    })
   }
 }

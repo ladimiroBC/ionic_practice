@@ -1,6 +1,7 @@
 export interface ApiResponse<T> {
   message?: string;
-  customer_recent: T;
+  customers_recent: T;
+  customers_online: T;
 }
 
 export interface Customer {
