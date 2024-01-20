@@ -27,7 +27,7 @@ export class CustomersPage implements OnInit {
   }
 
   getCustomerRecent(): Customer[] {
-    this.customersRecent = this._customerService.getCustomersOnline();
+    this.customersRecent = this._customerService.getCustomersRecent();
     return this.customersRecent;
   }
 
