@@ -26,13 +26,19 @@ export class CustomersPage implements OnInit {
     this.router.navigate(['/home']);
   }
 
-  getCustomerRecent(): Customer[] {
-    this.customersRecent = this._customerService.getCustomersOnline();
-    return this.customersRecent;
+  getCustomerRecent() {
+    this._customerService.getCustomersRecent().subscribe({
+      next: (response) => {
+        this.customersRecent = response.customer_recent;
+        console.log(this.customersRecent)
+      },
+      error: (error) => {
+        console.log(error);
+      }
+    })
   }
 
-  getCustomerOnline(): Customer[] {
-    this.customersOnline = this._customerService.getCustomersOnline();
-    return this.customersOnline;
+  getCustomerOnline() {
+
   }
 }

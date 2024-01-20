@@ -1,26 +1,23 @@
 import { Injectable } from "@angular/core";
-import data_online from "../../assets/data/customers_online.json";
-import data_recent from "../../assets/data/customers_recent.json";
 import { ICustomerService } from "../domain/customer.interface";
 import { HttpClient } from "@angular/common/http";
-import { Customer } from "../domain/customer";
+import { ApiResponse, Customer } from "../domain/customer";
+import { Observable } from "rxjs";
 
 @Injectable({
   providedIn: 'root'
 })
 export class CustomerService implements ICustomerService{
-  private customersRecent!: Customer[]
-  private customersOnline!: Customer[];
+  private urlRecent: string = "../../assets/data/customers_recent.json";
+  private urlOnline: string = "../../assets/data/customers_online.json";
 
   constructor(private _http: HttpClient) { }
 
-  getCustomersRecent(): Customer[] {
-    this.customersRecent = data_recent.customers_recent;
-    return this.customersRecent;
+  getCustomersRecent(): Observable<ApiResponse<Customer[]>> {
+    return this._http.get<ApiResponse<Customer[]>>(this.urlRecent);
   }
 
-  getCustomersOnline(): Customer[] {
-    this.customersOnline = data_online.customers_online;
-    return this.customersOnline;
+  getCustomersOnline(): Observable<ApiResponse<Customer[]>> {
+    return this._http.get<ApiResponse<Customer[]>>(this.urlOnline);
   }
 }
