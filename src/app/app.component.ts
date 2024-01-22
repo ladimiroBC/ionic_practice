@@ -8,6 +8,7 @@ export class AppComponent {
   public appPages = [
     { title: 'Home', url: '/home', icon: 'home' },
     { title: 'Customers', url: '/customers', icon: 'people' },
+    { title: 'Movies', url: '/movies', icon: 'videocam' }
   ];
   constructor() {}
 }

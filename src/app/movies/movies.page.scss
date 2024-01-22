@@ -1,0 +1,24 @@
+ion-toolbar {
+  background-color: var(--ion-color-newcolor);
+}
+
+ion-card {
+  img {
+    width: 354px;
+    height: 515px;
+  }
+
+  .div-name {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', 'Arial, sans-serif';
+    font-size: x-large;
+    color: var(--ion-color-newcolor);
+    text-align: center;
+  }
+
+  .div-release {
+    @extend .div-name;
+    font-size: medium;
+  }
+}
+
+

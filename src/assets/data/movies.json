@@ -1,0 +1,24 @@
+{
+  "movies":[
+    {
+      "name": "Gone Girl",
+      "release": "2014",
+      "image": "poster_gone_girl.jpg"
+    },
+    {
+      "name": "Inception",
+      "release": "2010",
+      "image": "poster_inception.jpg"
+    },
+    {
+      "name": "Leaving Las Vegas",
+      "release": "1995",
+      "image": "poster_leaving_las_vegas.jpg"
+    },
+    {
+      "name": "Oldboy",
+      "release": "2003",
+      "image": "poster_oldboy.jpg"
+    }
+  ]
+}
