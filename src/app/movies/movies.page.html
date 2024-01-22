@@ -7,7 +7,7 @@
 <ion-content>
   <ion-row>
     <ion-col sizeLg="6" sizeMd="6" sizeXs="12" *ngFor="let movie of movies">
-      <ion-card>
+      <ion-card (click)="cardMovieDelete()">
         <img alt="{{movie.name}}" src="../../assets/images/movies/{{movie.image}}"/>
         <div class="div-name">{{movie.name}}</div>
         <div class="div-release">{{movie.release}}</div>
