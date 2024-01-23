@@ -11,6 +11,7 @@ import { Customer } from '../domain/customer';
 export class CustomersPage implements OnInit {
   customersRecent!: Customer[];
   customersOnline!: Customer[];
+  searchRecent: any = [];
 
   constructor(
     private router: Router,
@@ -20,6 +21,7 @@ export class CustomersPage implements OnInit {
   ngOnInit() {
     this.getCustomerRecent();
     this.getCustomerOnline();
+    this.searchRecent = [...this.customersRecent];
   }
 
   navigate() {
@@ -27,12 +29,18 @@ export class CustomersPage implements OnInit {
   }
 
   getCustomerRecent(): Customer[] {
-    this.customersRecent = this._customerService.getCustomersOnline();
+    this.customersRecent = this._customerService.getCustomersRecent();
     return this.customersRecent;
   }
 
   getCustomerOnline(): Customer[] {
     this.customersOnline = this._customerService.getCustomersOnline();
     return this.customersOnline;
+  }
+
+  searchCustomersRecent(event: any) {
+    const search = event.target.value.toLowerCase();
+    this.searchRecent = this.customersRecent.filter((customer) =>
+      customer.name!.toLowerCase().indexOf(search) > -1)
   }
 }

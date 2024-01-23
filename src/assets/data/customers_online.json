@@ -13,6 +13,12 @@
       "image":"avatar-ben.png"
     },
     {
+      "name":"Vader",
+      "state":"The dark side is the true reality",
+      "description":"Goodness died with Anakin Skywalker. I am Darth Vader, and I seek only absolute power",
+      "image":"avatar-vader.png"
+    },
+    {
       "name":"Leia",
       "state":"You're My Only Hope",
       "description":"I've placed information vital to the survival...",

@@ -13,6 +13,12 @@
       "image":"avatar-han.png"
     },
     {
+      "name":"Lando",
+      "state":"Trouble, eh? ",
+      "description":"Han! Long time no see, old buddy. What brings you to Cloud City?",
+      "image":"avatar-lando.png"
+    },
+    {
       "name":"Rey",
       "state":"I can handle myself",
       "description":"You will remove these restraints and leave...",

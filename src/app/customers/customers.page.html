@@ -1,6 +1,13 @@
 <ion-header [translucent]="true">
   <ion-toolbar color="newcolor">
-    <ion-title>customers</ion-title>
+    <ion-title>Customers</ion-title>
+  </ion-toolbar>
+  <ion-toolbar>
+    <ion-searchbar
+    placeholder="Search"
+    animated [debounce]="1000"
+    (ionInput)="searchCustomersRecent($event)">
+    </ion-searchbar>
   </ion-toolbar>
 </ion-header>
 
@@ -8,7 +15,7 @@
   <ion-list>
     <ion-list-header> Recent Conversations </ion-list-header>
 
-    <ion-item *ngFor="let customer of customersRecent">
+    <ion-item *ngFor="let customer of searchRecent">
       <ion-avatar slot="start">
         <img src="../../assets/images/customers/{{customer.image}}"/>
       </ion-avatar>
