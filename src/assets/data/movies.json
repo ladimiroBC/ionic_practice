@@ -1,24 +1,46 @@
 {
   "movies":[
     {
+      "id": 1,
+      "name": "Donnie Darko",
+      "release": "2001",
+      "image": "poster_donnie_darko.jpg",
+      "description": "An intriguing psychological thriller directed by Richard Kelly. It follows the life of Donnie, a troubled teenager experiencing temporal phenomena and getting entangled in a surreal plot."
+    },
+    {
+      "id": 2,
       "name": "Gone Girl",
       "release": "2014",
-      "image": "poster_gone_girl.jpg"
+      "image": "poster_gone_girl.jpg",
+      "description": "A dark thriller directed by David Fincher, depicting the disappearance of Amy and the subsequent media attention. It explores the nuances of what initially appears to be a perfect marriage."
     },
     {
+      "id": 3,
       "name": "Inception",
       "release": "2010",
-      "image": "poster_inception.jpg"
+      "image": "poster_inception.jpg",
+      "description": "An innovative sci-fi thriller directed by Christopher Nolan. It delves into the invasion of dreams, taking the audience through layers of reality."
     },
     {
+      "id": 4,
+      "name": "Kill Bill Volume 1",
+      "release": "2003",
+      "image": "poster_kill_bill_part_one.jpg",
+      "description": "An explosive revenge odyssey directed by Quentin Tarantino, starring Uma Thurman. It features a unique blend of martial arts, stylized violence, and cinematic homages."
+    },
+    {
+      "id": 5,
       "name": "Leaving Las Vegas",
       "release": "1995",
-      "image": "poster_leaving_las_vegas.jpg"
+      "image": "poster_leaving_las_vegas.jpg",
+      "description": "is a poignant drama that delves into the harrowing journey of Ben Sanderson, a deeply troubled alcoholic portrayed by Nicolas Cage. Set against the vibrant yet decadent backdrop of Las Vegas, the film explores themes of addiction, despair, and an unconventional human connection."
     },
     {
+      "id": 6,
       "name": "Oldboy",
       "release": "2003",
-      "image": "poster_oldboy.jpg"
+      "image": "poster_oldboy.jpg",
+      "description": "A striking South Korean thriller directed by Park Chan-wook. It follows the story of a man mysteriously released after 15 years of confinement, triggering an obsessive quest for revenge with shocking twists and visually stunning direction."
     }
   ]
 }
