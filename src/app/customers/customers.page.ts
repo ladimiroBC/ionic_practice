@@ -11,6 +11,7 @@ import { Customer } from '../domain/customer';
 export class CustomersPage implements OnInit {
   customersRecent!: Customer[];
   customersOnline!: Customer[];
+  token = localStorage.getItem('token');
 
   constructor(
     private router: Router,
@@ -18,6 +19,8 @@ export class CustomersPage implements OnInit {
   ) { }
 
   ngOnInit() {
+    console.log('token--> ', this.token);
+    localStorage.clear();
     this.getCustomerRecent();
     this.getCustomerOnline();
   }
